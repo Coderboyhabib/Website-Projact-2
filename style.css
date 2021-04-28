@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.web_width {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section_padding {
+    padding: 60px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 555;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: 900;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+li a.active,
+li a:hover {
+    background: #1b9bff;
+}
+
+
+nav .check_btn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+nav #check {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    nav .logo {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 704px) {
+    nav .check_btn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        text-align: center;
+        left: -100%;
+        transition: all 1s;
+        z-index: 99;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #fff;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* About Us Css Start */
+#about_us {}
+
+#about_us .about_titile {
+    font-size: 45px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about_us_controler {}
+
+.about_us_inner {}
+
+.about_us_left {
+    max-width: 400px;
+    float: left;
+    margin-right: 30px;
+}
+
+.about_us_left img {
+    width: 100%;
+}
+
+.about_us_right {
+    max-width: 100%;
+}
+
+.about_us_right p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.about_us_button {
+    padding: 10px 30px;
+    color: #fff;
+    background: #0082e6;
+    border: 2px solid #0082e6;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 30px;
+}
+
+.about_us_button:hover {
+    background: #0064b1;
+}
+
+/* About Us Css End */
+
+/* Team Css Start */
+#team_section {}
+
+.our_team_title {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Team_controler {}
+
+.all_team_mamber {
+    display: flex;
+    width: auto;
+    text-align: center;
+    flex: wrap;
+}
+
+#team_section .team {
+    background: #0082e6;
+    margin: 5px auto;
+    margin-bottom: 50px;
+    width: 350px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -3px #062844;
+}
+
+.team h3 {
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+.team p.team_role {
+    margin: 12px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.team p {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.team .team_img {}
+
+.team .team_img img {
+    height: 400px;
+    width: 100%;
+}
+
+/* Team Css End */
+
+/* Contact Css Start */
+#contact_section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(img/contact_us_bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#contact_section .our_team_title {
+    color: #fff;
+}
+
+.contact_form {}
+
+.socila_icons i.fas {
+    color: #fff;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.socila_icons i.fas:hover {
+    border-color: #000;
+    background: #ffa500;
+}
+
+.socila_icons span {
+    color: #fff;
+    display: inline-block;
+    padding: 20px 0;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.socila_icons {
+    max-width: 550px;
+    float: left;
+}
+
+.contact_form_aura {
+    max-width: 550px;
+    float: right;
+}
+
+.contact_form_aura input,
+textarea {
+    padding: 13px 20px;
+    margin: 10px 0;
+    width: 500px;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid #ffa500;
+    border-radius: 5px;
+}
+
+.contact_form_aura input[type=submit] {
+    background: orange;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contact_form_aura input[type=submit]:hover {
+    background: #bf8215;
+    color: #000;
+    border-color: #000;
+}
+
+iframe {
+    padding: 5px;
+    background: orange;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+iframe:hover {
+    background: #a06b09;
+    box-shadow: 0px 0px 10px -5px #fff;
+}
+
+/* Contact Css End */
+
+/* Schroll to top Css Start */
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+#home_page_Slider {
+    padding-top: 80px;
+}
+
+/* Schroll to top Css End */
